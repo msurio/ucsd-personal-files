@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>
+      Data Types, User Input, Conditional Logic
+    </title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      //this command makes a prompt that asks for your name
+      var userName = prompt("What's your name?");
+      //this command is a confirm / cancel command. 
+      var confirmCats = confirm("Do you like cats?");
+      //these variables are given values to be called upon later
+      var petName = "Meeses";
+      var petType = "Tuxedo Cat";
+      var petAge = 5;
+      var petIsCat = true;
+      
+      //this command brings a confirm prompt "Do you like cats?"
+      if (confirmCats) {
+        //if you say confirm / yes, then it will give you the variable values
+        alert(petName + " " + petType + " " + petAge);
+      }
+      //if you say no / cancel, then this prompt will be given instead
+      else {
+        alert("You don't get my cat's information");
+      }
+
+      //this is a boolean statement. petIsCat = true
+      // because it is true, then it will bring the alert: "My pet is a cat"
+      if (petIsCat) {
+        alert("My pet is a cat");
+      }
+      else {
+        alert("My pet is not a cat");
+      }
+      // !== means that it is false
+      if (petAge !== 7) {
+        alert("My pet is not 7 years old");
+      }
+      // === must be exactly 5
+      if (petAge === 5) {
+        alert("My pet is 5 years old");
+      }
+      else if (petAge < 5) {
+        alert("My pet is less than 5 years old");
+      }
+      else if (petAge > 5) {
+        alert("My pet is older than 5 years old");
+      }
+      // this is an alert tag that adds the userName that the user put
+      alert("Welcome to our page " + userName);
+
+      var catAge = prompt("How old is your cat?");
+
+      // Won't work as expected
+      alert(catAge + 2);
+
+      // Works as expected
+      alert(parseInt(catAge) + 2);
+
+    </script>
+  </body>
+</html>

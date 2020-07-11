@@ -1,0 +1,47 @@
+body{
+    font-family: 'Orbitron', sans-serif;
+    text-align:center;
+    margin:0;
+    padding:0;
+}
+
+nav{
+    background-color: seashell;
+    padding:25px;
+}
+
+ul{
+    list-style: none;
+}
+
+ul li{
+   display:inline;
+   margin:25px;
+}
+
+li a{
+    font-size:24px;
+    text-decoration:underline royalblue;
+    text-decoration-style: wavy;
+    color:black;
+
+}
+
+li a:hover{
+    color: deepskyblue;
+}
+
+li a:visited{
+    color: lightsalmon;
+}
+
+li a:focus{
+    color:orchid;
+}
+
+li a:active{
+    color: plum;
+}
+
+
+
